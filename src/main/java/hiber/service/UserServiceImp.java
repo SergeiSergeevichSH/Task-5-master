@@ -13,11 +13,14 @@ import java.util.List;
 @Service
 public class UserServiceImp implements UserService {
 
-   @Autowired
+   private CarDaoHibernet carDaoHibernet;
+
    private UserDao userDao;
 
-   @Autowired
-   private CarDaoHibernet carDaoHibernet;
+   UserServiceImp (UserDao userDao,CarDaoHibernet carDaoHibernet){
+      this.userDao=userDao;
+      this.carDaoHibernet = carDaoHibernet;
+   }
 
    @Transactional
    @Override

@@ -27,23 +27,12 @@ public class MainApp {
 
 
       List<Car> cars = userService.listCars();
-//      cars.forEach(System.out::println);
       for (Car car : cars) {
          System.out.printf("Id = %d%nModel = %s%nSeries = %d%n%n",
                  car.getId(), car.getModel(), car.getSeries());
       }
 
     userService.getUserByCarModelAndSeries("Lada 2108",1980);
-
-//
-//      List<User> users = userService.listUsers();
-//      for (User user : users) {
-//         System.out.println("Id = "+user.getId());
-//         System.out.println("First Name = "+user.getFirstName());
-//         System.out.println("Last Name = "+user.getLastName());
-//         System.out.println("Email = "+user.getEmail());
-//         System.out.println();
-//      }
 
       context.close();
    }

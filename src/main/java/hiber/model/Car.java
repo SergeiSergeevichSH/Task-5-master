@@ -37,13 +37,13 @@ public class Car {
         return Objects.hash(getModel(), getSeries());
     }
 
-    public Long getId() {return id;    }
+    public Long getId() {return id;}
 
-    public void setId(Long id) {this.id = id;    }
+    public void setId(Long id) {this.id = id;}
 
-    public String getModel() {return model;    }
+    public String getModel() {return model;}
 
-    public void setModel(String model) { this.model = model;    }
+    public void setModel(String model) { this.model = model;}
 
     public int getSeries() {return series;    }
 

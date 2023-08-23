@@ -20,10 +20,8 @@ public class User {
 
    @Column(name = "last_name")
    private String lastName;
-   //   @Column(name = "email")
 
    private String email;
-
 
    public User(String firstName, String lastName, String email, Car car) {
       this.firstName = firstName;
